@@ -4,11 +4,10 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1><%: Title %>.</h1>
-                <h2><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">&nbsp;Arkansas University of Astronomy and Astrophysics</span></h2>
+                <h1><%: Title %>Arkansas University of Astronomy and Astrophysics</h1>
             </hgroup>
             <p>
-                To learn more about ASP.NET, visit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.
+                &nbsp;To learn more about ASP.NET, visit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.
                 The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET.
                 If you have any questions about ASP.NET visit
                 <a href="http://forums.asp.net/18.aspx" title="ASP.NET Forum">our forums</a>.
