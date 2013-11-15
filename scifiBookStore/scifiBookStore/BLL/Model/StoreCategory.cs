@@ -10,11 +10,15 @@ namespace scifiBookStore.BLL.Model
 {
     public class StoreCategory
     {
-        [Key]
+        [Key, ScaffoldColumn(false)]
         public int CategoryID { get; set; }
+
+        [Required, StringLength(100), Display(Name = "Name")]
         public string Name { get; set; }
 
+        [Display(Name = "Product Description")]
         public String Description { get; set; }
+
         public string ShortDescription { get; set; }
 
         public DateTime LastUpdated { get; set; }

@@ -47,7 +47,7 @@ namespace scifiBookStore.BLL.Model
                     Name = "21st Century Astronomy",
                     Description = "Textbook on Astronomy for the 21st Century",
                     ShortDescription = "Written by Steven Desch and Donald Terndrup",
-                    Price = 199.99M,
+                    Price = 199.99,
                     UnitsInStock = 10,
                     LastUpdated = DateTime.Now,
                     CategoryID = 1
@@ -60,7 +60,7 @@ namespace scifiBookStore.BLL.Model
                     Name = "The Story of Helium and the Birth of Astrophysics",
                     Description = "Historial look into the field of Astrophysics",
                     ShortDescription = "Written by Biman B. Nath",
-                    Price = 197.99M,
+                    Price = 197.99,
                     UnitsInStock = 10,
                     LastUpdated = DateTime.Now,
                     CategoryID = 2
