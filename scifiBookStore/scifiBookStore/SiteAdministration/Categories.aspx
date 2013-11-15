@@ -15,6 +15,14 @@
             <asp:BoundField DataField="Name" />
             <asp:BoundField DataField="ShortDescription" />
             <asp:BoundField DataField="LastUpdated" />
+
+            <asp:TemplateField ShowHeader="false">
+                <ItemTemplate>
+                    <asp:HyperLink ID ="hplCategoryDetails" NavigateUrl='<%# Eval("CategoryID", "CategoryDetails.aspx?id={0}") %>' Text="View Details" runat="server"></asp:HyperLink>
+                </ItemTemplate>
+
+
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
 </asp:Content>
