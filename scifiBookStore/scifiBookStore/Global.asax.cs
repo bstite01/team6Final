@@ -6,6 +6,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using scifiBookStore;
+using scifiBookStore.BLL.Model;
+using System.Data.Entity;
 
 namespace scifiBookStore
 {
@@ -17,6 +19,9 @@ namespace scifiBookStore
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            Database.SetInitializer<ProductContext>(new ProductModelInitializer());
+
         }
 
         void Application_End(object sender, EventArgs e)

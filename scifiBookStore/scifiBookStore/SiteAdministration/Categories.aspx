@@ -4,5 +4,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-   <h2> Categories Listings: </h2>
+   <strong> Categories Listings: </strong>
+    <br />
+    <asp:GridView runat ="server" ID="StoreCategories" PageSize="5" Width="800px"
+        ItemType ="scifiBookStore.BLL.Model.StoreCategory" DataKeyNames="CategoryID" AllowPaging="True"
+        AutoGenerateColumns ="False" AllowSorting="False"
+        SelectMethod ="GetCategories" BorderWidth="1px">
+
+        <Columns>
+            <asp:BoundField DataField="Name" />
+            <asp:BoundField DataField="ShortDescription" />
+            <asp:BoundField DataField="LastUpdated" />
+        </Columns>
+    </asp:GridView>
 </asp:Content>

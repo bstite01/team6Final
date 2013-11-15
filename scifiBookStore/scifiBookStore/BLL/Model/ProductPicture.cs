@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
 
 namespace scifiBookStore.BLL.Model
 {
     public class ProductPicture
     {
+        [Key]
         public int PictureID { get; set; }
 
         public string Title { get; set; }
