@@ -64,7 +64,6 @@ namespace scifiBookStore.BLL.Model
                     UnitsInStock = 10,
                     LastUpdated = DateTime.Now,
                     CategoryID = 2
-
                 }
 
             };

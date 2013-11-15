@@ -13,25 +13,73 @@
         <ItemTemplate>
             <strong>Category Name:</strong>
             <br />
-            <%# Eval("Name") %>
+            <%# Item.Name %>
             <br />
             <br />
             <strong>Short Description:</strong>
             <br />
-            <%# Eval ("ShortDescription") %>
+            <%# Item.ShortDescription %>
             <br />
             <br />
             <strong>Description:</strong>
             <br />
-            <%# Eval("Description") %>
+            <%# Item.Description %>
             <br />
             <br />
             <strong>Last Updated</strong>
             <br />
-            <%# Eval("LastUpdated") %>
+            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
             <br />
             <br />
 
         </ItemTemplate>
+
+        <InsertItemTemplate>
+            <strong>Category Name:</strong>
+            <br />
+            <%# Item.Name %>
+            <br />
+            <br />
+            <strong>Short Description:</strong>
+            <br />
+            <%# Item.ShortDescription %>
+            <br />
+            <br />
+            <strong>Description:</strong>
+            <br />
+            <%# Item.Description %>
+            <br />
+            <br />
+            <strong>Last Updated</strong>
+            <br />
+            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
+            <br />
+            <br />
+
+        </InsertItemTemplate>
+
+        <EditItemTemplate>
+            <strong>Category Name:</strong>
+            <br />
+            <%# Item.Name %>
+            <br />
+            <br />
+            <strong>Short Description:</strong>
+            <br />
+            <%# Item.ShortDescription %>
+            <br />
+            <br />
+            <strong>Description:</strong>
+            <br />
+            <%# Item.Description %>
+            <br />
+            <br />
+            <strong>Last Updated</strong>
+            <br />
+            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
+            <br />
+            <br />
+
+        </EditItemTemplate>
     </asp:FormView>
 </asp:Content>

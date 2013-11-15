@@ -18,7 +18,7 @@
 
             <asp:TemplateField ShowHeader="false">
                 <ItemTemplate>
-                    <asp:HyperLink ID ="hplCategoryDetails" NavigateUrl='<%# Eval("CategoryID", "CategoryDetails.aspx?id={0}") %>' Text="View Details" runat="server"></asp:HyperLink>
+                    <asp:HyperLink ID ="hplCategoryDetails" NavigateUrl='<%# "CatgoryDetails.aspx?id=" + Item.CategoryID %>' Text="View Details" runat="server"></asp:HyperLink>
                 </ItemTemplate>
 
 
