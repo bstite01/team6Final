@@ -28,15 +28,12 @@ namespace scifiBookStore.BLL.Model
         [Display(Name = "Units"), DataType("Integer"), Range(0, 500)]
         public int UnitsInStock { get; set; }
 
-        public string LogoPictureThumbFile { get; set; }
+        public string Image { get; set; }
 
         public DateTime LastUpdated { get; set; }
 
         //The following describe relationship properties
         public int? CategoryID { get; set; }
         public virtual StoreCategory Category { get; set; }
-
-        //Picture relationship
-        public virtual ICollection<ProductPicture> Pictures { get; set; }
     }
 }

@@ -14,6 +14,7 @@
             <br />
             <%# Item.Name %>
             <br />
+            <img src="/Images/<%#:Item.Image %>" border="1" alt="<%#:Item.Name %>" height="300" />
             <br />
             <strong>Product Category: </strong>
             <br />

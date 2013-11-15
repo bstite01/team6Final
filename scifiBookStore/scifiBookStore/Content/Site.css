@@ -104,13 +104,13 @@ h5, h6 {
 }
 
     .main-content {
-        background: url("../Images/accent.png") no-repeat;
+       /*background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
-        padding-top: 30px;
+        padding-top: 30px;*/
     }
 
     .featured + .main-content {
-        background: url("../Images/heroAccent.png") no-repeat;
+       /* background: url("../Images/heroAccent.png") no-repeat;*/
     }
 
 header .content-wrapper {
@@ -503,16 +503,16 @@ input[type="checkbox"].input-validation-error {
 /* tables
 ----------------------------------------------------------*/
 table {
-    border-collapse: collapse;
+   /* border-collapse: collapse;*/
     border-spacing: 0;
     margin-top: 0.75em;
-    border: 0 none;
+    /*border: 0 none;*/
 }
 
 th {
 	font-size: 1.2em;
     text-align: left;
-    border: none 0px;
+   /* border: none 0px;*/
     padding-left: 0;
 }
 
@@ -555,7 +555,7 @@ th {
 
 td {
     padding: 0.25em 2em 0.25em 0em;
-    border: 0 none;
+   /* border: 0 none;*/
 }
 
 tr.pager td {

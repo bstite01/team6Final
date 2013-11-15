@@ -50,7 +50,8 @@ namespace scifiBookStore.BLL.Model
                     Price = 199.99,
                     UnitsInStock = 10,
                     LastUpdated = DateTime.Now,
-                    CategoryID = 1
+                    CategoryID = 1,
+                    Image = "21stcenastro.jpg"
 
                 },
 

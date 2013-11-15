@@ -22,6 +22,42 @@ namespace scifiBookStore
 
             Database.SetInitializer<ProductContext>(new ProductModelInitializer());
 
+            RegisterRoutes(RouteTable.Routes);
+        }
+
+        void RegisterRoutes(RouteCollection routes)
+        {
+            routes.MapPageRoute(
+                "HomeRoute",
+                "Home",
+                "~/Default.aspx"
+            );
+            routes.MapPageRoute(
+                "AboutRoute",
+                "About",
+                "~/About.aspx"
+            );
+            routes.MapPageRoute(
+                "ContactRoute",
+                "Contact",
+                "~/Contact.aspx"
+            );
+            routes.MapPageRoute(
+                "ProductListRoute",
+                "ProductList",
+                "~/ProductList.aspx"
+            );
+
+            routes.MapPageRoute(
+                "ProductsByCategoryRoute",
+                "ProductList/{categoryName}",
+                "~/ProductList.aspx"
+            );
+            routes.MapPageRoute(
+                "ProductByNameRoute",
+                "Product/{productName}",
+                "~/Pages/ProductDetails.aspx"
+            );
         }
 
         void Application_End(object sender, EventArgs e)

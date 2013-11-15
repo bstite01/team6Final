@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using scifiBookStore.BLL.Model;
 
 namespace scifiBookStore
 {
@@ -68,6 +69,12 @@ namespace scifiBookStore
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public IQueryable<StoreCategory> GetCategories()
+        {
+            var db = new scifiBookStore.BLL.Model.ProductContext();
+            return db.Categories;
         }
     }
 }

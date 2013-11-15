@@ -187,6 +187,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Images\21stcenastro.jpg" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -202,6 +203,11 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Pages\Categories.aspx" />
+    <Content Include="Pages\CategoryDetails.aspx" />
+    <Content Include="Pages\ProductDetails.aspx" />
+    <Content Include="Pages\Products.aspx" />
+    <Content Include="ProductsList.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -232,7 +238,6 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="SiteAdministration\Categories.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -284,7 +289,9 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="BLL\Model\ProductPicture.cs" />
+    <Compile Include="BLL\Model\CartItem.cs" />
+    <Compile Include="BLL\Model\Order.cs" />
+    <Compile Include="BLL\Model\OrderDetail.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -306,6 +313,41 @@
     <Compile Include="BLL\Model\Product.cs" />
     <Compile Include="BLL\Model\ProductContext.cs" />
     <Compile Include="BLL\Model\ProductModelInitializer.cs" />
+    <Compile Include="Pages\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CategoryDetails.aspx.cs">
+      <DependentUpon>CategoryDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CategoryDetails.aspx.designer.cs">
+      <DependentUpon>CategoryDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.aspx.cs">
+      <DependentUpon>ProductsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsList.aspx.designer.cs">
+      <DependentUpon>ProductsList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -321,13 +363,6 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="SiteAdministration\Categories.aspx.cs">
-      <DependentUpon>Categories.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SiteAdministration\Categories.aspx.designer.cs">
-      <DependentUpon>Categories.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -339,6 +374,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="BLL\Logic\" />
+    <Folder Include="SiteAdministration\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
