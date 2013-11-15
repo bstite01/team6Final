@@ -34,52 +34,6 @@
 
         </ItemTemplate>
 
-        <InsertItemTemplate>
-            <strong>Category Name:</strong>
-            <br />
-            <%# Item.Name %>
-            <br />
-            <br />
-            <strong>Short Description:</strong>
-            <br />
-            <%# Item.ShortDescription %>
-            <br />
-            <br />
-            <strong>Description:</strong>
-            <br />
-            <%# Item.Description %>
-            <br />
-            <br />
-            <strong>Last Updated</strong>
-            <br />
-            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
-            <br />
-            <br />
 
-        </InsertItemTemplate>
-
-        <EditItemTemplate>
-            <strong>Category Name:</strong>
-            <br />
-            <%# Item.Name %>
-            <br />
-            <br />
-            <strong>Short Description:</strong>
-            <br />
-            <%# Item.ShortDescription %>
-            <br />
-            <br />
-            <strong>Description:</strong>
-            <br />
-            <%# Item.Description %>
-            <br />
-            <br />
-            <strong>Last Updated</strong>
-            <br />
-            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
-            <br />
-            <br />
-
-        </EditItemTemplate>
     </asp:FormView>
 </asp:Content>
