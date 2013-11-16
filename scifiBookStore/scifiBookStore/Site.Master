@@ -44,23 +44,25 @@
                 </p>
             </div>
             <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" /></a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
+             <section id="login">
+        <a href="/ShoppingCart.aspx"><span ID="cartCount" runat="server"></span>&nbsp;</a>
+        <span class="float-right">
+        <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+            <AnonymousTemplate>
+                <ul>
+                    <li><a id="A1" runat="server" href="~/Account/Register.aspx">Register</a></li>
+                    <li><a id="A2" runat="server" href="~/Account/Login.aspx">Log in</a></li>
+                </ul>
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <span>
+                    Hello, <a id="A3" runat="server" class="username" href="~/Account/ChangePassword.aspx" title="Change password"><asp:LoginName ID="LoginName1" runat="server" CssClass="username" /></a>!
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+                </span>
+            </LoggedInTemplate>
+        </asp:LoginView>
+        </span>
+    </section> 
                 <nav>
                     <ul id="menu">
                             <li><a href="/">Home</a></li>

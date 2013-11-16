@@ -16,5 +16,6 @@ namespace scifiBookStore.BLL.Model
         //these retrieve the table entities
         public DbSet<StoreCategory> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }

@@ -35,6 +35,11 @@
             <br />
             <%# Item.UnitsInStock %>
             <br />
+            <a href="/AddToCart.aspx?productID=<%#:Item.productID %>">               
+                            <span class="ProductListItem">
+                                <b>Add To Cart<b>
+                            </span>           
+                        </a>
             <br />
             <strong>Stock Last Updated:</strong>
             <br />

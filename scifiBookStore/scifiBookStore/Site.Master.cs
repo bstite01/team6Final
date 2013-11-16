@@ -6,6 +6,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using scifiBookStore.BLL.Model;
+using scifiBookStore.BLL.Logic;
 
 namespace scifiBookStore
 {
@@ -69,6 +70,13 @@ namespace scifiBookStore
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            ShoppingCartActions usersShoppingCart = new ShoppingCartActions();
+            string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
+            cartCount.InnerText = cartStr;
         }
 
         public IQueryable<StoreCategory> GetCategories()
