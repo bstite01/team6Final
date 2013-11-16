@@ -51,7 +51,7 @@ namespace scifiBookStore
             routes.MapPageRoute(
                 "ProductsByCategoryRoute",
                 "ProductList/{categoryName}",
-                "~/ProductList.aspx"
+                "~/ProductsList.aspx"
             );
             routes.MapPageRoute(
                 "ProductByNameRoute",

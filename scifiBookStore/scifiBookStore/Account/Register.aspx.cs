@@ -20,6 +20,10 @@ namespace scifiBookStore.Account
         {
             FormsAuthentication.SetAuthCookie(RegisterUser.UserName, createPersistentCookie: false);
 
+            scifiBookStore.BLL.Logic.ShoppingCartActions usersShoppingCart = new scifiBookStore.BLL.Logic.ShoppingCartActions();
+            String cartId = usersShoppingCart.GetCartId();
+            usersShoppingCart.MigrateCart(cartId, RegisterUser.UserName.ToString());
+
             string continueUrl = RegisterUser.ContinueDestinationPageUrl;
             if (!OpenAuth.IsLocalUrl(continueUrl))
             {

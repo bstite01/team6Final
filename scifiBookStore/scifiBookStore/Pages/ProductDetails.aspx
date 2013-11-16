@@ -35,16 +35,20 @@
             <br />
             <%# Item.UnitsInStock %>
             <br />
-            <a href="/AddToCart.aspx?productID=<%#:Item.productID %>">               
+
+            <br />
+            <strong>Stock Last Updated:</strong>
+            <br />
+
+            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
+            <br />
+            <br />
+                        <a href="/AddToCart.aspx?productID=<%#:Item.productID %>">               
                             <span class="ProductListItem">
                                 <b>Add To Cart<b>
                             </span>           
                         </a>
-            <br />
-            <strong>Stock Last Updated:</strong>
-            <br />
-            <%# Item.LastUpdated.ToLongDateString() %> - <%# Item.LastUpdated.ToShortTimeString() %>
-            <br />
+
         </ItemTemplate>
     </asp:FormView>
 </asp:Content>

@@ -4,7 +4,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1><%: Title %>Arkansas University of Astronomy and Astrophysics</h1>
+                <h1><%: Title %> - Arkansas University of Astronomy and Astrophysics</h1>
             </hgroup>
             <p>
                 &nbsp;To learn more about ASP.NET, visit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.

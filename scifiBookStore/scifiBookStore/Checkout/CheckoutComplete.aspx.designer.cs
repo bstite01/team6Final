@@ -7,36 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace scifiBookStore.Account {
+namespace scifiBookStore.Checkout {
     
     
-    public partial class Login {
+    public partial class CheckoutComplete {
         
         /// <summary>
-        /// LoginCtrl control.
+        /// TransactionId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Login LoginCtrl;
+        protected global::System.Web.UI.WebControls.Label TransactionId;
         
         /// <summary>
-        /// RegisterHyperLink control.
+        /// Continue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-        
-        /// <summary>
-        /// OpenAuthLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::scifiBookStore.Account.OpenAuthProviders OpenAuthLogin;
+        protected global::System.Web.UI.WebControls.Button Continue;
     }
 }

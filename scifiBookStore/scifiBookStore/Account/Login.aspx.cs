@@ -20,5 +20,12 @@ namespace scifiBookStore.Account
                 RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
             }
         }
+
+        protected void LoginCtrl_LoggedIn(object sender, EventArgs e)
+        {
+            scifiBookStore.BLL.Logic.ShoppingCartActions usersShoppingCart = new scifiBookStore.BLL.Logic.ShoppingCartActions();
+            String cartId = usersShoppingCart.GetCartId();
+            usersShoppingCart.MigrateCart(cartId, User.Identity.Name.ToString());
+        }
     }
 }
